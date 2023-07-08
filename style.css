@@ -1,0 +1,25 @@
+.khoi-trang-chu{
+    background-color:white;
+    width: 900px;
+    height:500px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-bottom: 1px solid black;
+   
+}
+.doan
+{
+
+    /* font-size: 16px; */
+    /* font-weight: bold; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* text-decoration: underline; */
+    line-height: 30px;
+}
+.img-trang-chu
+{
+    width: 300px;
+    height: 300px;
+    margin : 20px;
+    float : left;
+}

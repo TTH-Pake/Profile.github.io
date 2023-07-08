@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    color:#071261;
+    background: radial-gradient(farthest-side, currentColor calc(100% - 6px),#0000 calc(100% - 5px) 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 13px),#000 calc(100% - 12px));
+    border-radius: 50%;
+    animation: s9 2s infinite linear;
+  }
+  .custom-loader::before,
+  .custom-loader::after {    
+    content:"";
+    grid-area: 1/1;
+    background:
+      linear-gradient(currentColor 0 0) center,
+      linear-gradient(currentColor 0 0) center;
+    background-size: 100% 10px,10px 100%;
+    background-repeat: no-repeat;
+  }
+  .custom-loader::after {
+     transform: rotate(45deg);
+  }
+  
+  @keyframes s9 { 
+    100%{transform: rotate(0.5turn)}
+  }
+
+  
+.Menu-item
+{
+    background-color:#FFF5EE;
+    width:180px;
+    height: 550px;
+    margin: 0px;
+    padding: 0px;
+    float : left;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.item-home
+{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.link-item
+{   
+    margin-top: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.link-item:hover
+{
+    margin-right:10px;
+    transition: 1s;
+}
+
+a.link-item:hover
+{
+    color : orange;
+}
+
+
+.container
+{
+    background-color:#E8E8E8;
+    background-image: -webkit-gradient(linear, left top, left bottom,); 
+    width: 1300px;
+    height: 550px;
+    margin: 5px;
+    padding: 5px;
+    float : right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height:25px;
+}
+
+.container h3
+{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container h5
+{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container img
+{
+    width: 320px;
+    height: 450px;
+    float: left;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.container p
+{
+    font-size: 19px;
+}
